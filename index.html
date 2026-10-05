@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IA na Prática Studio Web</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div><b>IA NA PRÁTICA</b><span>Studio Web</span></div><small>Editor local no navegador</small></header>
+<main>
+<section class="panel">
+<h1>Crie seu projeto de vídeo</h1>
+<label>Título</label><input id="title" value="7 Formas de Ganhar Dinheiro com IA em 2026">
+<label>Roteiro</label><textarea id="script" placeholder="Cole seu roteiro aqui..."></textarea>
+<div class="grid">
+<div><label>Formato</label><select id="format"><option value="16:9">YouTube 16:9</option><option value="9:16">Shorts 9:16</option></select></div>
+<div><label>Estilo</label><select id="style"><option>Tecnologia Dark</option><option>Negócios</option><option>Minimalista</option></select></div>
+</div>
+<label>Imagens das cenas</label><input id="images" type="file" accept="image/*" multiple>
+<div class="buttons"><button id="analyze">ANALISAR ROTEIRO</button><button class="secondary" id="voice">▶ TESTAR VOZ</button></div>
+<p class="hint">A prévia de voz usa as vozes disponíveis no seu navegador. Nenhum roteiro é enviado pelo site.</p>
+</section>
+
+<section class="panel preview">
+<div class="top"><h2>Prévia</h2><span id="count">0 cenas</span></div>
+<div id="stage"><div class="brand">IA NA PRÁTICA DIGITAL</div><div id="stageText">Cole um roteiro e clique em Analisar.</div></div>
+<div id="scenes"></div>
+</section>
+</main>
+<footer><button id="save">SALVAR PROJETO (.JSON)</button><span id="status">Pronto</span></footer>
+<script src="app.js"></script>
+</body></html>
